@@ -8,6 +8,6 @@ const InputField=forwardRef((props, ref)=>{
     <div>
       <input id="input" type="text"  ref={ref}/>
     </div>
-    )
-    }
+    );
+    });
 export default InputField;
