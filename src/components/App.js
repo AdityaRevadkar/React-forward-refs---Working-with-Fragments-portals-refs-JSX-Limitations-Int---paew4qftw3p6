@@ -9,7 +9,7 @@ const App = () => {
   const settingValue = () => {
     const inputValue = newRef.current.value;
     const textarea = document.getElementById("textarea");
-   let values = inputValue;
+   textarea.value = inputValue;
   };
 
   const focusInput = () => {
@@ -23,7 +23,7 @@ const App = () => {
     <InputField  ref={newRef}  type="text"/><br/>
     <button id="settingValueButton" onClick={settingValue}>Set Value</button>
     <button id="focusInputButton" onClick={focusInput}>Focus the input</button><br/><br/>
-     <textarea id="textarea" value={values}></textarea>
+     <textarea id="textarea"></textarea>
 
     </div>
   );
