@@ -9,7 +9,7 @@ const App = () => {
   const settingValue = () => {
     const inputValue = newRef.current.value;
     const textarea = document.getElementById("textarea");
-    textarea.value = inputValue;
+   let values = inputValue;
   };
 
   const focusInput = () => {
