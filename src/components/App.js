@@ -4,6 +4,17 @@ import InputField from './InputField.js';
 const App = () => {
  
 //code here 
+  const newRef = useRef(null);
+
+  const settingValue = () => {
+    const inputValue = newRef.current.value;
+    const textarea = document.getElementById("textarea");
+    textarea.value = inputValue;
+  };
+
+  const focusInput = () => {
+    inputRef.current.focus();
+  };
 
 
  
