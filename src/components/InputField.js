@@ -3,7 +3,7 @@ import '../styles/App.css';
 
 //complete the following using forward refs concept 
 
-const InputField=forwardRef((props, ref)=>{
+const InputField=forwardRef((ref)=>{
     return(
     <div>
       <input id="input" type="text"  ref={ref}/>
