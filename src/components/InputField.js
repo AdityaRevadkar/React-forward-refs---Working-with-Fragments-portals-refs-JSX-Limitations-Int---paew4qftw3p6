@@ -3,10 +3,10 @@ import '../styles/App.css';
 
 //complete the following using forward refs concept 
 
-const InputField=forwardRef((ref)=>{
+const InputField=forwardRef((props,ref)=>{
     return(
     <div>
-      <input id="input" type="text"  ref={ref}/>
+      <input id="input" type=type={props.type} ref={ref}/>
     </div>
     );
     });
