@@ -6,7 +6,7 @@ import '../styles/App.css';
 const InputField=forwardRef((props,ref)=>{
     return(
     <div>
-      <input id="input" type=type={props.type} ref={ref}/>
+      <input id="input" type={props.type} ref={ref}/>
     </div>
     );
     });
