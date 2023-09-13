@@ -4,7 +4,7 @@ import InputField from './InputField.js';
 const App = () => {
  
 //code here 
-
+const inputRef = useRef();
   const settingValue = () => {
     const inputValue = inputRef.current.value;
     const textarea = document.getElementById("textarea");
@@ -17,7 +17,7 @@ const App = () => {
  
   return (
     <div>
-    <InputField  ref={newRef} type="text"/> <br/>
+    <InputField  ref={inputRef} type="text"/> <br/>
     <button id="settingValueButton" onClick={settingValue}>Set Value</button>
     <button id="focusInputButton" onClick={focusInput}>Focus the input</button> <br/> <br/>
      <textarea id="textarea"></textarea>
